@@ -23,6 +23,12 @@ import sektion5 from "../hej/sektion5.astro";
 				</p>
 			</div>
 			<div>
+				<img class="stjerne1" src="../public/stjerne.png" alt="Illustration af stjerne">
+			</div>
+			<div>
+				<img class="stjerne2" src="../public/stjerne.png" alt="Illustration af stjerne">
+			</div>
+			<div>
 				<img class="to_piger" src="../public/to_piger.png" alt="Illustration af piger">
 			</div>
 		</body>
@@ -31,6 +37,12 @@ import sektion5 from "../hej/sektion5.astro";
 </html>
 
 <style>
+/* GENERELT */
+body {
+	background-color: pink;
+	font-family: Arial, Helvetica, sans-serif;
+}
+	/* DESKTOPVERSION */
 	@media (min-width: 800px) {
 	.grid_tekst {
 		display: grid;
@@ -42,10 +54,22 @@ import sektion5 from "../hej/sektion5.astro";
 
 	.to_piger {
 		width: 25%;
-		margin-top: 30px;
 		margin-left: 500px;
+		margin-bottom: 50px;
+	}
+
+	.stjerne1 {
+		width: 5%;
+		transform: translate(350%, -180%);
+	}
+
+	.stjerne2 {
+		width: 4%;
+		transform: translate(1900%, -175%);
 	}
 }
+
+/* MOBILVERSION */
 @media (max-width: 800px) {
 	.grid_tekst {
 		display: grid;
@@ -57,8 +81,19 @@ import sektion5 from "../hej/sektion5.astro";
 
 	.to_piger {
 		width: 50%;
-		margin-top: 30px;
+		margin-top: 10px;
 		margin-left: 160px;
+		margin-bottom: 20px;
+	}
+
+	.stjerne1 {
+		width: 7%;
+		transform: translate(30%, -250%);
+	}
+
+	.stjerne2 {
+		width: 6%;
+		transform: translate(1500%, -150%);
 	}
 }
 </style>
