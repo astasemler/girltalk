@@ -1,0 +1,99 @@
+---
+import sektion5 from "../hej/sektion5.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+	<main>
+		<sektion5></sektion5>
+		<body>
+			<div class="grid_tekst">
+				<p>I sin søgen efter svar og forståelse for sin komplekse følelsesmæssige tilstand stødte Alberte på girltalk.dk. Her fandt hun et fællesskab af unge kvinder, der delte lignende oplevelser og udfordringer. Gennem girltalk.dk fandt Alberte en støttende og forstående gruppe, hvor hun kunne dele sine tanker, bekymringer og drømme.
+				</p>
+				<p>Det var en øjenåbner for Alberte at opdage, at hun ikke var alene i sine følelser og tvivl. Girltalk.dk blev et fristed for hende, hvor hun kunne udforske sin identitet, få støtte og finde vej i sin rejse mod voksenlivet. Det gav hende modet til at tage de næste skridt i sit liv med større selvtillid og klarhed over, hvem hun var, og hvad hun ønskede at opnå.
+				</p>
+				<p>Takket være Girltalk og det fællesskab, hun fandt der, begyndte Alberte at finde sin egen vej og forstå sin plads i verden. Det blev starten på hendes rejse mod selvopdagelse, selvtillid og personlig vækst.
+				</p>
+			</div>
+			<div>
+				<img class="stjerne1" src="../public/stjerne.png" alt="Illustration af stjerne">
+			</div>
+			<div>
+				<img class="stjerne2" src="../public/stjerne.png" alt="Illustration af stjerne">
+			</div>
+			<div>
+				<img class="to_piger" src="../public/to_piger.png" alt="Illustration af piger">
+			</div>
+		</body>
+	</main>
+	</body>
+</html>
+
+<style>
+/* GENERELT */
+body {
+	background-color: pink;
+	font-family: Arial, Helvetica, sans-serif;
+}
+	/* DESKTOPVERSION */
+	@media (min-width: 800px) {
+	.grid_tekst {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-left: 400px;
+		margin-right: 400px;
+		margin-top: 40px;
+	}
+
+	.to_piger {
+		width: 25%;
+		margin-left: 500px;
+		margin-bottom: 50px;
+	}
+
+	.stjerne1 {
+		width: 5%;
+		transform: translate(350%, -180%);
+	}
+
+	.stjerne2 {
+		width: 4%;
+		transform: translate(1900%, -175%);
+	}
+}
+
+/* MOBILVERSION */
+@media (max-width: 800px) {
+	.grid_tekst {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-left: 75px;
+		margin-right: 75px;
+		margin-top: 40px;
+	}
+
+	.to_piger {
+		width: 50%;
+		margin-top: 10px;
+		margin-left: 160px;
+		margin-bottom: 20px;
+	}
+
+	.stjerne1 {
+		width: 7%;
+		transform: translate(30%, -250%);
+	}
+
+	.stjerne2 {
+		width: 6%;
+		transform: translate(1500%, -150%);
+	}
+}
+</style>
