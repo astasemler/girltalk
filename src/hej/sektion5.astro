@@ -4,11 +4,11 @@
 
 <sektion>
 			<div class="grid_tekst">
-				<p>I sin søgen efter svar og forståelse for sin komplekse følelsesmæssige tilstand stødte Alberte på girltalk.dk. Her fandt hun et fællesskab af unge kvinder, der delte lignende oplevelser og udfordringer. Gennem girltalk.dk fandt Alberte en støttende og forstående gruppe, hvor hun kunne dele sine tanker, bekymringer og drømme.
+				<p class="grid1">I sin søgen efter svar og forståelse for sin komplekse følelsesmæssige tilstand stødte Alberte på girltalk.dk. Her fandt hun et fællesskab af unge kvinder, der delte lignende oplevelser og udfordringer. Gennem girltalk.dk fandt Alberte en støttende og forstående gruppe, hvor hun kunne dele sine tanker, bekymringer og drømme.
 				</p>
-				<p>Det var en øjenåbner for Alberte at opdage, at hun ikke var alene i sine følelser og tvivl. Girltalk.dk blev et fristed for hende, hvor hun kunne udforske sin identitet, få støtte og finde vej i sin rejse mod voksenlivet. Det gav hende modet til at tage de næste skridt i sit liv med større selvtillid og klarhed over, hvem hun var, og hvad hun ønskede at opnå.
+				<p class="grid2">Det var en øjenåbner for Alberte at opdage, at hun ikke var alene i sine følelser og tvivl. Girltalk.dk blev et fristed for hende, hvor hun kunne udforske sin identitet, få støtte og finde vej i sin rejse mod voksenlivet. Det gav hende modet til at tage de næste skridt i sit liv med større selvtillid og klarhed over, hvem hun var, og hvad hun ønskede at opnå.
 				</p>
-				<p>Takket være Girltalk og det fællesskab, hun fandt der, begyndte Alberte at finde sin egen vej og forstå sin plads i verden. Det blev starten på hendes rejse mod selvopdagelse, selvtillid og personlig vækst.
+				<p class="grid3">Takket være Girltalk og det fællesskab, hun fandt der, begyndte Alberte at finde sin egen vej og forstå sin plads i verden. Det blev starten på hendes rejse mod selvopdagelse, selvtillid og personlig vækst.
 				</p>
 			</div>
 			<div>
@@ -40,15 +40,31 @@ p {
 	@media (min-width: 800px) {
 	.grid_tekst {
 		display: grid;
-		grid-template-columns: 1fr;
-		margin-left: 400px;
-		margin-right: 400px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 120px;
+		/*margin-left: 400px;
+		margin-right: 400px;*/
 		margin-top: 40px;
 	}
 
+    .grid1 {
+        grid-row: 2 / span 2;
+        grid-column: 2 / span 2;
+    }
+
+    .grid2 {
+        grid-row: 3 / span 2;
+        grid-column: 2 / span 2;
+    }
+
+    .grid3 {
+        grid-row: 4 / span 2;
+        grid-column: 2 / span 2;
+    }
+
 	.to_piger {
 		width: 35%;
-		margin-left: 450px;
+		margin-left: 350px;
 		margin-bottom: 50px;
 	}
 
