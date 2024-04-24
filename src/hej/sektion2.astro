@@ -1,0 +1,77 @@
+---
+---
+
+<article>
+     <div class="section2_grid">
+        <p class="alberte_historie1">I 2022 blev Alberte student fra Højbjerg Stats Gymnasium. Hun følte en ubeskrivelig
+            frihed strømme gennem
+            sig, som om
+            verden åbnede sig for hende i en strøm af uendelige muligheder. Men friheden var som et tveægget sværd; den
+            bragte også
+            en overvældende virkelighed med sig.
+            <br>
+            <br>
+            Midt i denne nye fase af sit liv begyndte Alberte at stille sig selv de store spørgsmål. Hvem var hun
+            egentlig? Hvad
+            ønskede hun at opnå med sit liv? Og hvad med alle vennerne fra gymnasiet? Var de virkelig de mennesker, hun
+            ønskede at
+            dele sit voksenliv med?
+        </p>
+        <div class="image-container-sektion2"></div>
+        <p class="alberte_citat">“Jeg følte ikke jeg havde nogen at læne mig op af. Jeg havde en stærk overbevisning om
+            at min omgangskreds ville dømme mig for min følelser og tanker.”</p>
+    </div>
+</article>
+
+<style>
+  .section2_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .alberte_historie1 {
+            grid-row: 2 / span 2;
+            grid-column: 2 / span 2;
+
+        }
+
+        .image-container-sektion2 {
+            grid-row: 3 / span 2;
+            grid-column: 2 / span 2;
+            margin-top: 7%;
+            height: 258%;
+            width: 69%;
+            background-size: cover;
+            animation: changeImage2 1s infinite;
+
+        }
+
+        @keyframes changeImage2 {
+
+            0%,
+            33.33% {
+                background-image: url("../img/alberte.png");
+                /* Første billede */
+            }
+
+            33.34%,
+            66.66% {
+                background-image: url("../img/alberte2.png");
+                /* Andet billede */
+            }
+
+            66.67%,
+            100% {
+                background-image: url("../img/alberte3.png");
+                /* Tredje billede */
+            }
+        }
+
+        .alberte_citat {
+            grid-row: 8 / span 2;
+            grid-column: 2 / span 2;
+            padding-top: 10%;
+        }
+</style>
