@@ -1,0 +1,116 @@
+---
+
+---
+
+<article>
+ <h3 class="overskrift">Du er altid god nok</h3>
+
+        <div class="tekstboks1ogillu">
+            <img class="blueboks_1" src="../img/blueboks_1.svg" alt="blueboks_1">
+
+            <p class="p_blueboks">Ensomhed er ikke nødvendigvis forbundet med, hvor mange venner man har omkring
+                sig. Følelsen kan også
+                opstå, når man er
+                sammen med andre. Ligesom man også kan være meget alene uden at føle sig ensom.</p>
+
+            <div class="illu_1"><img class="illu_1" src="../img/pigersammen_forfra.png" alt="pigersammen_forfra"> </div>
+
+            <div class="illu_2"><img src="../img/stjerner.svg" alt="stjerner"></div>
+        </div>
+
+        <div class="3_boksediv">
+            <img class="illu_3" src="../img/3_bokse.svg" alt="3_bokse">
+        </div>
+</article>
+
+<style>
+      * {
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+        main {
+        color: #283ea4;
+         max-width: 1200px;
+    }
+
+    body {
+        background-color: #f7cad9;
+        
+        margin: auto 0;
+        margin-left: 5%;
+        margin-right: 5%;
+         display: grid;
+        justify-content: center;
+    }
+
+         h3 {
+            text-transform: uppercase;
+            color: #283ea4;
+            font-size: 79px;
+            font-family: Obviously;
+            font-weight: 570;
+            letter-spacing: 6.32px;
+            word-wrap: break-word;
+        }
+
+        p {
+            color: #f7cad9;
+            font-size: 25px;
+            font-family: Helvetica;
+            font-weight: 400;
+            letter-spacing: 3.04px;
+            word-wrap: break-word;
+        }
+
+        .overskrift {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15vh;
+        }
+
+        .tekstboks1ogillu {
+            display: grid;
+            /* Centrerer gitteret inden i dens container */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            /* gap: 0px; */
+            padding-top: 15px;
+            padding-bottom: 60px;
+        }
+
+        .blueboks_1 {
+            width: 120%;
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            padding-left: 5%;
+        }
+
+        .p_blueboks {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            padding-left: 15%;
+            padding-top: 4%;
+
+        }
+
+        .illu_1 {
+            width: 100%;
+            grid-column: 3 / span 2;
+            grid-row: 2 / span 2;
+            padding-left: 5%;
+        }
+
+        .illu_2 {
+            width: 65%;
+            grid-column: 1 / span 2;
+            grid-row: 3 / span 2;
+        }
+
+        .illu_3 {
+            padding: 5%;
+            width: 100%;
+        }
+
+</style>
